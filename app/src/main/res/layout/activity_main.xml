@@ -7,12 +7,139 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/dottedLineT1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="25dp"
+        android:text="default (horizontal)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT1" />
+
+    <TextView
+        android:id="@+id/dottedLineT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="虚线颜色(divider_lineColor)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLine1" />
+
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        app:divider_lineColor="@color/purple_500"
+        app:divider_orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT2" />
+
+    <TextView
+        android:id="@+id/dottedLineT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="虚线寬度(dashThickness)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLine2" />
+
+    <TextView
+        android:id="@+id/dottedLineT3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="*會受layout_height限制"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT3" />
+
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        app:dashThickness="10dp"
+        app:divider_lineColor="@color/purple_200"
+        app:divider_orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT3_1" />
+
+    <TextView
+        android:id="@+id/dottedLineT4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="虚线長度(dashLength)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLine3" />
+
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        app:dashLength="10dp"
+        app:divider_lineColor="@color/teal_700"
+        app:divider_orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT4" />
+
+    <TextView
+        android:id="@+id/dottedLineT5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="虚线间隔長度(dashGap)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLine4" />
+
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        app:dashGap="10dp"
+        app:divider_lineColor="@color/teal_200"
+        app:divider_orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT5" />
+
+    <TextView
+        android:id="@+id/dottedLineT6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="虚线朝向(divider_orientation)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLine5" />
+
+    <com.elapsefeather.dottedlineview.DottedLineView
+        android:id="@+id/dottedLine6"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:dashGap="10dp"
+        app:dashLength="10dp"
+        app:dashThickness="2dp"
+        app:divider_lineColor="@color/purple_700"
+        app:divider_orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedLineT6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
