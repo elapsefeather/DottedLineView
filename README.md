@@ -1,6 +1,7 @@
 # DottedLineView
 
-[![](https://jitpack.io/v/elapsefeather/DottedLineView.svg)](https://jitpack.io/#elapsefeather/DottedLineView)
+[![](https://jitpack.io/v/elapsefeather/DottedLineView.svg)](https://jitpack.io/#elapsefeather/DottedLineView)   
+自定義多樣式虛線繪製
 
 ## sample
 
@@ -30,6 +31,16 @@ dependencies {
      implementation 'com.github.elapsefeather:DottedLineView:1.0.0'
 }
 ```
+
+## parameter
+
+| parameter             | parameter type    | effect            |
+| -------------         |-------------      |-------------      |
+| divider_lineColor          | color         | 虚線颜色          |
+| dashThickness          | dimension         | 虚線寬度          |
+| dashLength          | dimension         | 虚線長度          |
+| dashGap          | dimension         | 虚線間隔長度          |
+| divider_orientation          | enum         |  可選方向：<br> horizontal <br> vertical          |
 
 ## Usage
 
