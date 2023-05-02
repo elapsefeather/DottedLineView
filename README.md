@@ -64,4 +64,4 @@ dependencies {
 > ### v1.0.0(2022/10/13)
 > - new project.
 
-
+http://www.apache.org/licenses/LICENSE-2.0
